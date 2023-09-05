@@ -36,12 +36,10 @@ function createPhotoGallery(galleryItems) {
 
 
 function onLightboxClick(evt) {
-    evt.preventDefault();
-    
-    lightbox = new SimpleLightbox('.gallery a', {
+    evt.preventDefault();  
+}
+
+lightbox = new SimpleLightbox('.gallery a', {
         captionsData: 'alt',
         captionDelay: 250
-    });
-    
-    
-}
+    })
